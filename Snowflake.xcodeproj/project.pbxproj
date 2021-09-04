@@ -11,6 +11,7 @@
 		4617384A26E306D000BD697C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4617384926E306D000BD697C /* ContentView.swift */; };
 		4617384C26E306D100BD697C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4617384B26E306D100BD697C /* Assets.xcassets */; };
 		4617384F26E306D100BD697C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4617384E26E306D100BD697C /* Preview Assets.xcassets */; };
+		4617385826E30C5C00BD697C /* KochCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4617385726E30C5C00BD697C /* KochCurve.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		4617384E26E306D100BD697C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4617385026E306D100BD697C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4617385126E306D100BD697C /* Snowflake.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Snowflake.entitlements; sourceTree = "<group>"; };
+		4617385726E30C5C00BD697C /* KochCurve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KochCurve.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				4617385026E306D100BD697C /* Info.plist */,
 				4617385126E306D100BD697C /* Snowflake.entitlements */,
 				4617384D26E306D100BD697C /* Preview Content */,
+				4617385726E30C5C00BD697C /* KochCurve.swift */,
 			);
 			path = Snowflake;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4617385826E30C5C00BD697C /* KochCurve.swift in Sources */,
 				4617384A26E306D000BD697C /* ContentView.swift in Sources */,
 				4617384826E306D000BD697C /* SnowflakeApp.swift in Sources */,
 			);
