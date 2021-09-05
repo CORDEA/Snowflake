@@ -24,6 +24,20 @@ struct ContentView: View {
             path.addPath(
                     drawKochCurve(n: n),
                     transform: CGAffineTransform(translationX: width / 2, y: 0)
+                            .rotated(by: CGFloat(120 * Double.pi / 180))
+            )
+            path.addPath(
+                    drawKochCurve(n: n),
+                    transform: CGAffineTransform(translationX: width / 2, y: 0)
+                            .scaledBy(x: -1, y: 1)
+                            .rotated(by: CGFloat(120 * Double.pi / 180))
+            )
+            path.addPath(
+                    drawKochCurve(n: n),
+                    transform: CGAffineTransform(
+                            translationX: width / 2 - (length * CGFloat(sin(30 * Double.pi / 180))),
+                            y: length * CGFloat(cos(30 * Double.pi / 180))
+                    )
             )
         }
                 .stroke(lineWidth: 1.0)
