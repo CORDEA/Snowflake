@@ -32,6 +32,9 @@ class KochCurve {
                 y: start.y + length / 3 * sin(angle + angle60)
         )
 
-        return [start] + compute(n: n - 1, a: start, b: top) + [top] + compute(n: n - 1, a: top, b: end) + [end]
+        return compute(n: n - 1, a: a, b: start) + [start]
+                + compute(n: n - 1, a: start, b: top) + [top]
+                + compute(n: n - 1, a: top, b: end) + [end]
+                + compute(n: n - 1, a: end, b: b)
     }
 }
