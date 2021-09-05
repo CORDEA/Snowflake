@@ -8,9 +8,15 @@
 import Foundation
 
 class KochCurve {
+    let length: CGFloat
+
+    init(length: CGFloat) {
+        self.length = length
+    }
+
     func compute(n: Int) -> [CGPoint] {
-        let start = CGPoint(x: 100, y: 100)
-        let end = CGPoint(x: 300, y: 100)
+        let start = CGPoint(x: 0, y: 0)
+        let end = CGPoint(x: length, y: 0)
         return [start] + compute(n: n, a: start, b: end) + [end]
     }
 
